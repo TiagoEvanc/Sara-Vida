@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=,, initial-scale=1.0">
+    <title>Formulário de Ajuda</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+    <style>
+        * {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+        
+        #container {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+            width: 80%;
+            height: auto;
+        }
+        
+        h1 {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 18px;
+            text-align: center;
+            color: #313131;
+        }
+        
+        .inputa {
+            position: absolute;
+            width: 25%;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 25%;
+            border: 2px solid #313131;
+            box-sizing: border-box;
+            border-radius: 10px;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .inputb {
+            position: absolute;
+            width: 25%;
+            height: 40px;
+            margin-top: 20px;
+            margin-left: 51%;
+            border: 2px solid #313131;
+            box-sizing: border-box;
+            border-radius: 10px;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .inputc {
+            position: absolute;
+            width: 51%;
+            height: 40px;
+            margin-top: 70px;
+            margin-left: 25%;
+            margin-right: 20%;
+            border: 2px solid #313131;
+            box-sizing: border-box;
+            border-radius: 10px;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        .inputd {
+            position: absolute;
+            width: 51%;
+            height: 40px;
+            margin-top: 120px;
+            margin-left: 25%;
+            margin-right: 20%;
+            border: 2px solid #313131;
+            box-sizing: border-box;
+            border-radius: 10px;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+        
+        textarea {
+            width: 51%;
+            height: 150px;
+            margin-top: 13em;
+            margin-left: 25%;
+            border: 2px solid #313131;
+            box-sizing: border-box;
+            border-radius: 10px;
+            outline: none;
+            padding-left: 10px;
+            padding-right: 10px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        
+        .inputsub {
+            width: 51%;
+            height: 40px;
+            margin-left: 25%;
+            background: #313131;
+            border-radius: 10px;
+            border: none;
+            color: #ffffff;
+            font-weight: 500;
+            margin-top: 5px;
+            outline: none;
+            transition-duration: 0.1s;
+            cursor: pointer;
+        }
+        
+        .inputsub:hover {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        
+        .res {
+            margin: 10px;
+            text-align: center;
+            text-transform: uppercase;
+            font-size: 15px;
+            color: #313131;
+        }
+        
+        .opfc {
+            font-style: normal;
+            font-weight: bold;
+            font-size: 13px;
+            text-align: center;
+            color: #313131;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1>Formulário de Ajuda</h1>
+        <input type="text" class="inputa" placeholder="Nome:" id="campo">
+        <input type="text" class="inputb" placeholder="Sobrenome:" id="campo2">
+        <input type="email" class="inputc" placeholder="E-mail:" id="campo3">
+        <input type="text" class="inputd" placeholder="Assunto:" id="campo4">
+        <textarea placeholder="Mensagem:" id="campo5"></textarea>
+        <input type="button" value="Concluído" class="inputsub" onclick="sub()">
+        <br><br>
+        <h1 class="opfc">Desenvolvido por Tiago Evancouver - SENAI 15/09/21</h1>
+    </div>
+
+    <script>
+        function sub() {
+            document.getElementById('campo').value = '';
+            document.getElementById('campo2').value = '';
+            document.getElementById('campo3').value = '';
+            document.getElementById('campo4').value = '';
+            document.getElementById('campo5').value = '';
+            alert("Seus dados não foram para lugar nenhum, esse site só faz parte do projeto.");
+        }
+    </script>
+</body>
+
+</html>
